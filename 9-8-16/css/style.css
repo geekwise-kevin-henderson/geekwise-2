@@ -1,0 +1,5 @@
+img{
+  position:absolute;
+  top:calc(50% - calc(150px / 2));
+  left:calc(50% - calc(150px / 2));
+}
