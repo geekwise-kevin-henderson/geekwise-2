@@ -1,0 +1,35 @@
+body{
+  background-image:url(../img/background.jpeg);
+  background-size:cover;
+  color:white;
+}
+header::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+span{
+  width:30%;
+  float:left;
+}
+img{
+  float:left;
+}
+h1{
+  float:left;
+}
+small{
+  width:30%;
+  float:left;
+}
+nav{
+  width:40%;
+  float:left;
+}
+ul{
+  list-style-type:none;
+  float:left;
+}
+li{
+  display:inline-block;
+}
