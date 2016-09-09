@@ -1,0 +1,40 @@
+body{
+  margin:0;
+}
+header{
+  padding:0 15%;
+  background-image:url(../img/background.jpg);
+  background-position:center;
+  background-size:cover;
+}
+h1{
+  color:white;
+}
+.blue{
+  color:#30C4DB;
+}
+#stack{
+  width:100%;
+}
+li{
+  list-style-type:none;
+}
+a{
+  text-decoration:none;
+}
+#logo{
+  height:70px;
+  width:auto;
+  float:left;
+}
+a>h1{
+  line-height:50px;
+  padding:0;
+}
+a>p{
+  line-height:20px;
+  padding:0;
+}
+span{
+  height:70px;
+}
