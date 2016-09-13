@@ -1,0 +1,37 @@
+body{
+  margin:0;
+}
+span::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+div{
+  width:50%;
+  height:100vh;
+  float:left;
+}
+div::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+div:nth-of-type(1){
+  background-color:blue;
+}
+div:nth-of-type(2){
+  background-color:red;
+}
+/*flex-parent{
+  display
+  justify-content
+  align-items
+  flex-direction
+  align-content
+  flex-wrap
+}
+flex-child{
+  flex
+  align-self
+  order
+}*/
