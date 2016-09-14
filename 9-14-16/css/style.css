@@ -1,0 +1,27 @@
+body{
+  margin:0;
+  height:100vh;
+}
+section{
+  display:flex;
+  flex-direction:column;
+  width:70%;
+  padding:0% 15%;
+  background-color:hsl(132, 50%, 31%);
+}
+h2{
+  flex:1;
+}
+.r{
+  display:flex;
+  flex-direction:row;
+  flex:1;
+}
+.c{
+  flex:50%;
+  margin:5px;
+}
+img{
+  border-radius:100%;
+  float:left;
+}
