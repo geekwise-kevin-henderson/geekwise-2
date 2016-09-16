@@ -1,0 +1,43 @@
+body{
+  margin:0;
+  background-image:url(../img/trees.jpg);
+  background-size:cover;
+  background-position:center;
+}
+progress{
+  width:70%;
+  margin:25px 15%;
+}
+div.grid{
+  width:70%;
+  margin:25px 15%;
+}
+div.grid table{
+  position: relative;
+  width: 100%;
+}
+div.grid table:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+div.grid table tr td{
+  border:1px solid black;
+  background-color:white;
+}
+div.grid table tr td:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+div.inventory{
+  width:40%:
+  margin:5%;
+  background-color: #844E36;
+  display:inline-block;
+}
+div.inventory div{
+  height:30px;
+  width:30px;
+  display:inline-block;
+}

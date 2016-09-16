@@ -1,0 +1,7 @@
+body{
+  margin:0;
+  background-color:hsl(19, 56%, 49%);
+}
+div{
+  border:1px solid black;
+}
