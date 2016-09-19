@@ -1,0 +1,23 @@
+body{
+  margin:0;
+  background-image:url(../img/trees.jpg);
+  background-size:cover;
+  background-position:center;
+}
+progress{
+  width:70%;
+  margin:25px 15%;
+}
+.table{
+  width:70%;
+  margin:25px 15%;
+}
+#dungeon{
+  position: relative;
+  width: 100%;
+}
+#dungeon:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
