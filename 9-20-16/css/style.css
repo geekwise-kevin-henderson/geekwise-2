@@ -1,0 +1,65 @@
+@import 'https://fonts.googleapis.com/css?family=Jaldi';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+
+body{
+  margin:0;
+  font-family: 'Jaldi', sans-serif;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+nav{
+  display:flex;
+  justify-content:space-between;
+  text-transform:uppercase;
+  padding:10px 20px;
+}
+nav *{
+  margin:0;
+  padding:0;
+}
+nav ul{
+  display:inline-flex;
+  align-items:center;
+  list-style-type: none;
+}
+nav ul li{
+  padding:10px;
+  margin:0 5px;
+  font-size:80%;
+}
+#hero{
+  text-align:center;
+  position:relative;
+  padding:50px 0 250px;
+  overflow: hidden;
+}
+#hero img{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translate3d(-50%, 50%, 0);
+}
+.content{
+  width: 70%;
+  margin:0 auto;
+}
+.container{
+  display:flex;
+}
+.container div{
+  margin:0 5px;
+}
+hr{
+  width:10%;
+}
+#amaze{
+  text-align:center;
+}
+.fa{
+  border:3px solid black;
+  font-size:30px;
+  border-radius:100%;
+  padding:10px;
+}

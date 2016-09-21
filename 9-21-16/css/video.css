@@ -1,0 +1,39 @@
+body{
+  margin:0;
+  padding-left:10%;
+  padding-right:10%;
+}
+body *{
+  color:hsl(278, 54%, 62%);
+}
+.top{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+.top p{
+  margin-bottom:30px;
+  max-width:450px;
+  text-align:center;
+}
+.bottom{
+  display:flex;
+}
+.bottom div{
+  margin:5px;
+}
+iframe{
+  margin:20px 0;
+}
+hr{
+  width:10%;
+}
+h3{
+  text-align:center;
+  border:2px solid hsl(278, 54%, 62%);
+  padding:10px;
+  height:20px;
+  width:20px;
+  display:inline-block;
+  border-radius:100%;
+}
