@@ -1,0 +1,56 @@
+body{
+  margin:0;
+}
+ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+ul li{
+  display:inline-block;
+  background-color:#83655D;
+  padding:10px;
+  float:left;
+  width:calc( 100% / 4 );
+  box-sizing:border-box;
+}
+ul::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+div:nth-of-type(1){
+  display:flex;
+  background-color:yellow;
+  justify-content:center;
+  align-items:center;
+  /*background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;*/
+  width:100%;
+  height:100vh;
+  border:50px solid black;
+  box-sizing:border-box;
+  /*overflow:hidden;
+  float:left;*/
+}
+  /*--parrallax effect--
+  position:relative;
+  left:-50%;
+  top:-50%;*/
+h1{
+  text-align:center;
+  font-size:6.32828783vw;
+}
+p{
+  column-width:400px;
+  -moz-column-width:400px;
+  -webkit-column-width:400px;
+  -o-column-width:400px;
+}
+#bend{
+  shape-outside:url(../img/mus.jpg);
+  shape-image-threshold:0.2;
+  -webkit-shape-outside:url(../img/mus.jpg);
+  -webkit-shape-image-threshold:0.2;
+}

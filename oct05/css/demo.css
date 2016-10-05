@@ -1,0 +1,33 @@
+body{
+  margin:0;
+}
+.main {
+  width: 500px;
+}
+
+.left,
+.right {
+  width: 40%;
+  height: 12ex;
+  background-color: lightgray;
+}
+
+.left {
+  -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  float: left;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.right {
+  -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+  shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+  float: right;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+p {
+  text-align: center;
+}
