@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+body{
+  font-family:'roboto', cursive, sans-serif;
+  margin:0;
+}
+h2{
+  text-transform:uppercase;
+}
+hr{
+  border:none;
+  height:1px;
+  background-color:rgba(54, 49, 52, 0.1);
+  margin:0;
+}
+h2 + hr{
+  width:15vw;
+  height:3px;
+  background-color:rgb(41, 192, 255);
+}
+form{
+  margin-top:50px;
+}
+form div{
+  display:flex;
+  padding:0;
+  border:none;
+  margin-bottom: 10px;
+}
+form div:first-of-type legend{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+}
+form legend input, form textarea{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 2;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: rgba(54, 49, 52, 0.1);
+}
+form div:first-of-type legend input{
+  margin-right:20px;
+}
+form div:first-of-type legend input:last-of-type{
+  margin-right:0;
+}
+form textarea{
+  margin-right: 20px;
+  flex:1;
+}
+form button[type='button']{
+  width:10vw;
+  align-self: flex-end;
+  position: relative;
+  border:none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 2;
+  z-index:1;
+  background-color:black;
+  cursor:pointer;
+}
+form button[type='button']:hover{
+  color:white;
+  background-color:black;
+}
+form button[type='button']:hover::before{
+  opacity:0;
+}
+form button[type='button']::before{
+  content:'';
+  display: block;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(198, 100%, 58%, 1),
+    hsla(198, 100%, 80%, 1)
+  );
+  z-index:-1;
+  transition: all 250ms ease-in-out;
+}
+form legend span{
+  position:relative;
+  top:25px;
+  transition: all 250ms ease-in-out;
+}
+.placeholder{
+  top:0;
+}
