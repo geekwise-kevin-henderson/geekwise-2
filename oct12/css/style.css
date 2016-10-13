@@ -43,7 +43,7 @@ form legend input, form textarea{
 form div:first-of-type legend input{
   margin-right:20px;
 }
-form div:first-of-type legend input:last-of-type{
+form div:first-of-type legend:last-of-type input:last-of-type{
   margin-right:0;
 }
 form textarea{
@@ -89,6 +89,7 @@ form legend span{
   position:relative;
   top:25px;
   transition: all 250ms ease-in-out;
+  align-self: flex-start;
 }
 .placeholder{
   top:0;
