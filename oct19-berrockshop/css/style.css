@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'BrushScript';
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot');
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.svg#eb21f6604ba28d5573abad1c01255830') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Fraktur';
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot');
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.svg#f78369fb7f540f355d128fc492e4218d') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+/*<-->global<-->*/
+body{
+  width:70vw;
+  margin:0 15vw;
+  background-color:#660000;
+}
+main{
+    margin: 0 auto;
+    background-color: #F9F9EA;
+    border: solid black 4px;
+}
+/*<-->navigation<-->*/
+section header{
+    width: 100%;
+}
+header .hero{
+    display: flex;
+    border-bottom: solid black 4px;
+}
+header .hero div{
+    flex: 1;
+    font-size: 2.6em;
+    text-align: center;
+}
+header .hero img{
+    flex: 3;
+    border-left: solid black 3px;
+}
+header nav{
+    width: 100%;
+    padding: 3% 2%;
+}
+header nav ul{
+    width: 61vw;
+    display: flex;
+    border-top: dotted hsl(78, 100%, 80%);
+    border-bottom: dotted hsl(78, 100%, 80%);
+    padding: 0;
+    list-style-type: none;
+    color: white;
+    text-shadow: -1px 0 #660000,0 1px #660000,1px 0 #660000,0 -1px #660000;
+}
+header nav ul li{
+    padding: 5% 3%;
+    margin: auto;
+}
+/*<-->home<-->*/
+#home
+/*<-->history<-->*/
+
+/*<-->menu<-->*/
+#meal{
+    padding: 0 5%;
+}
+#meal .head{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+#meal .generic{
+    border: solid 2px#660000;
+    border-radius: 2%;
+    padding: 3% 2%;
+    text-align: center;
+    position: relative;
+}
+#meal .container{
+    display: flex;
+}
+#meal .container .generic{
+    width: 40%;
+    padding: 2vw 2%;
+}
+#meal .container > .generic{
+    margin: 3vw 3%;
+}
+#meal .generic .title{
+    font-size: 1.5em;
+    background-color: #F9F9EA;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+#meal .generic p{
+    margin: 0;
+    font-size: 11px;
+    line-height: 20px;
+}
+#meal .foot{
+    text-align: center;
+    font-size: 11px;
+}
+#meal .back{
+    cursor: pointer;
+}
+/*<-->news<-->*/
+
+/*<-->contact<-->*/
