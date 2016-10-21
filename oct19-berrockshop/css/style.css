@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
 @font-face {
   font-family: 'BrushScript';
   src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot');
@@ -18,103 +19,272 @@
   font-style:   normal;
   font-weight:  400;
 }
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
-/*<-->global<-->*/
-body{
-  width:70vw;
-  margin:0 15vw;
+/*<-->global<-->Kevin<-->*/
+html{
+  width:62vw;
+  margin:0 19vw;
   background-color:#660000;
 }
-main{
-    margin: 0 auto;
-    background-color: #F9F9EA;
-    border: solid black 4px;
+body{
+  margin: 0 auto;
+  background-color: #FEFFEF;
+  border: solid black 4px;
 }
-/*<-->navigation<-->*/
+main>section{
+  padding: 0 5%;
+}
+p{
+  line-height:150%;
+}
+.left{
+  float:left;
+  width:60%;
+}
+.right{
+  float:right;
+  width:40%;
+}
+/*<-->header<-->Monty<-->*/
 section header{
-    width: 100%;
+  width: 100%;
 }
 header .hero{
-    display: flex;
-    border-bottom: solid black 4px;
+  display: flex;
+  border-bottom: solid black 4px;
 }
 header .hero div{
-    flex: 1;
-    font-size: 2.6em;
-    text-align: center;
+  flex: 1;
+  font-size: 2.6em;
+  text-align: center;
+  font-family:Fraktur;
+  color:#D2A800;
+  text-shadow: -2px 0 #660000,0 2px #660000,2px 0 #660000,0 -2px #660000;
 }
 header .hero img{
-    flex: 3;
-    border-left: solid black 3px;
+  flex: 3;
+  border-left: solid black 3px;
 }
 header nav{
-    width: 100%;
-    padding: 3% 2%;
+  width: 90%;
+  padding: 3% 0%;
+  margin:0 5%;
 }
 header nav ul{
-    width: 61vw;
-    display: flex;
-    border-top: dotted hsl(78, 100%, 80%);
-    border-bottom: dotted hsl(78, 100%, 80%);
-    padding: 0;
-    list-style-type: none;
-    color: white;
-    text-shadow: -1px 0 #660000,0 1px #660000,1px 0 #660000,0 -1px #660000;
+  width:100%;
+  display: flex;
+  border-top: dotted #B5B5AA;
+  border-bottom: dotted #B5B5AA;
+  padding: 0;
+  list-style-type: none;
 }
 header nav ul li{
-    padding: 5% 3%;
-    margin: auto;
+  padding:5px;
+  margin: auto;
 }
-/*<-->home<-->*/
-#home
-/*<-->history<-->*/
+header nav ul li a{
+  color: #FEFFEF;
+  text-shadow: -2px 0 #660000,0 2px #660000,2px 0 #660000,0 -2px #660000;
+  text-decoration:none;
+  font-family:BrushScript;
+  font-size:24px;
+}
 
-/*<-->menu<-->*/
-#meal{
-    padding: 0 5%;
+/*<-->home<-->Kevin<-->*/
+#home::after{
+  content:'';
+  display:block;
+  clear:both;
 }
+#home h3,h4{
+  font-family:BrushScript;
+  text-shadow: -2px 0 #660000,0 2px #660000,2px 0 #660000,0 -2px #660000;
+}
+#home h3{
+  color:#FEFFEF;
+  font-size:35px;
+}
+#home section>div{
+  padding:20px;
+}
+#home .left div:nth-of-type(1)::after{
+  clear:both;
+  content:'';
+  display:block;
+}
+#home .left img{
+  float:right;
+  shape-outside:circle();
+  -webkit-shape-outside:circle();
+}
+#home .right div{
+  position:relative;
+  margin-top:50px;
+  text-align:center;
+}
+#home .right>div{
+  border:2px solid black;
+  border-radius: 50px;
+}
+#home .right div:nth-of-type(2) div{
+  display:flex;
+  justify-content:space-between;
+}
+#home .right div h4{
+  color:#D2A800;
+  background-color:#FEFFEF;
+  display:inline-block;
+  position:absolute;
+  top:-56px;
+  left:20px;
+  padding:5px;
+  font-size:24px;
+}
+#home .right a{
+  color:#660000;
+}
+/*<-->history<-->Kevin<-->*/
+#history::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+#history .left img{
+  shape-outside:circle();
+  -webkit-shape-outside:circle();
+}
+#history .left img:nth-of-type(1){
+  float:right;
+}
+#history .left img:nth-of-type(2){
+  float:left;
+}
+#history .left h3, #history .left a{
+  font-family:BrushScript;
+  text-shadow: -2px 0 #660000,0 2px #660000,2px 0 #660000,0 -2px #660000;
+  color:#FEFFEF;
+}
+#history .left h3{
+  font-size:35px;
+}
+#history .left a{
+  text-decoration:none;
+}
+#history .right{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  height:922px;
+}
+/*<-->menu<-->Monty<-->*/
 #meal .head{
-    display: flex;
-    justify-content: space-between;
-    margin: 3% 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0;
 }
 #meal .generic{
-    border: solid 2px#660000;
-    border-radius: 2%;
-    padding: 3% 2%;
-    text-align: center;
-    position: relative;
+  border: solid 2px#660000;
+  border-radius: 2%;
+  padding: 3% 2%;
+  text-align: center;
+  position: relative;
 }
 #meal .container{
-    display: flex;
+  display: flex;
 }
 #meal .container .generic{
-    width: 40%;
-    padding: 2vw 2%;
+  width: 40%;
+  padding: 2vw 2%;
 }
 #meal .container > .generic{
-    margin: 3vw 3%;
+  margin: 3vw 3%;
 }
 #meal .generic .title{
-    font-size: 1.5em;
-    background-color: #F9F9EA;
-    position: absolute;
-    top: -15px;
-    left: 15px;
+  font-size: 1.5em;
+  background-color: #FEFFEF;
+  position: absolute;
+  top: -15px;
+  left: 15px;
 }
 #meal .generic p{
-    margin: 0;
-    font-size: 11px;
-    line-height: 20px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 20px;
 }
 #meal .foot{
-    text-align: center;
-    font-size: 11px;
+  text-align: center;
+  font-size: 11px;
 }
 #meal .back{
+  cursor: pointer;
+}
+/*<-->news<-->Monty<-->*/
+#news{
+    margin-bottom: 3%;
+}
+#news .headline{
+    width: 90%;
+    text-align: right;
+    background-image: linear-gradient(to left, hsla(0, 100%, 50%, 0.4) , #FEFFEF);
+    padding: 5px 2%;
+    font-size: 1.5em;
+    margin: auto;
+    border-bottom: dotted #B5B5AA;
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    font-size: 11px;
+    color: #333333;
+}
+#news .info .anon{
+    border-bottom: solid 2px #333333;
+    padding: 17.5px 0;
+}
+#news .info .date{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0;
+    font-weight: 900;
+}
+.top{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+#news .headline2{
+    width: 90%;
+    text-align: right;
+    background-image: linear-gradient(to left, hsla(0, 100%, 50%, 0.4) , #FEFFEF);
+    padding: 2% 2%;
+    font-size: 1.5em;
+    margin: auto;
+    border-top: dotted #B5B5AA;
+}
+#news .top:hover{
     cursor: pointer;
 }
-/*<-->news<-->*/
+/*<-->contact<-->Monty<-->*/
 
-/*<-->contact<-->*/
+#form{
+    display: flex;
+    flex-direction: column;
+}
+#form .info .text{
+    margin: 2% 22%;
+}
+#form .info .text input{
+    margin: 2% 2%;
+}
+#form .info .anon2{
+    text-align: center;
+    padding: 4vw 0;
+}
+#form .info .kid{
+    width: 105%;
+    margin-left: -5%;
+}
