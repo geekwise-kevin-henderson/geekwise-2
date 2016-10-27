@@ -1,3 +1,4 @@
+@import'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 @font-face {
   font-family: 'Brush Script Std';
   src: url('../fonts/BrushScriptStd.eot'); /* IE9 Compat Modes */
@@ -44,11 +45,11 @@ hr {
     border-color: hsl(0, 100%, 16%);
     border-style: solid;
 }
-header {
+body > header {
     display: flex;
     border: 4px solid black;
 }
-h1 {
+body > header >h1 {
     font-family: 'Fraktur BT', cursive;
     line-height: .85;
     font-size: 46px;
@@ -178,11 +179,10 @@ aside div table {
 #menu .fb {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #menu .fb div {
-    width: calc(50% - 50px);
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 48%;
     box-sizing: border-box;
     float: left;
     border: 2px solid hsl(0, 0%, 30%);
@@ -192,5 +192,87 @@ aside div table {
     margin-top: 32px;
 }
 #menu .fb div:nth-of-type(3n+1){
-    width: calc(100% - 50px);
+    width: 100%;
+}
+.fb p:last-of-type{
+  text-align:center;
+  width:100%;
+}
+article{
+  border-bottom: 1px solid hsl(0, 100%, 16%);
+}
+article header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+article p{
+  width:100%;
+}
+#news{
+  float:none;
+  padding: 0 50px 25px;
+  width:100%;
+}
+.grad{
+  display:flex;
+  align-items:center;
+  margin:0 25px;
+  padding: 5px 0 0;
+  background-color:pink;
+  background-image: linear-gradient(
+    to right,
+    hsl(60, 100%, 97%),
+    hsla(0, 100%, 16%, .5)
+    );
+  border-width: 0 0 1px;
+  border-style: dashed;
+  border-color: hsl(60, 7%, 70%);
+}
+.grad h2{
+  margin:0;
+  line-height:1.75;
+  margin-left:auto;
+}
+#contact section{
+  padding: 0 0 25px;
+  width:100%;
+  text-align:center;
+}
+i.fa, .grad h2{
+  font-size:300%;
+  color:white;
+  text-shadow:
+      1px 1px .25px hsl(0, 100%, 16%),
+      1px 1px 8px hsl(0, 100%, 16%),
+      -1px 1px .25px hsl(0, 100%, 16%),
+      -1px 1px 8px hsl(0, 100%, 16%),
+      1px -1px .25px hsl(0, 100%, 16%),
+      1px -1px 8px hsl(0, 100%, 16%),
+      -1px -1px .25px hsl(0, 100%, 16%),
+      -1px -1px 8px hsl(0, 100%, 16%);
+}
+form{
+  display:inline-block;
+}
+form label{
+  display:flex;
+  text-align:left;
+  margin-bottom:5px;
+}
+form label span{
+  width:75px;
+  text-align:right;
+  padding-right:5px;
+}
+form input[type='submit']{
+  align-self: flex-start;
+  margin-left: 78px;
+  border:1px solid hsl(0, 100%, 16%);
+  font-weight:bold;
+  background-color: hsl(60, 100%, 97%);
+  color:hsl(0, 100%, 16%);
+}
+#contact .grad{
+  margin:0 50px;
 }
