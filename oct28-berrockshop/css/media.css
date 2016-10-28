@@ -1,0 +1,82 @@
+@media screen and (max-width: 774px){
+  header div{
+    display:none;
+  }
+  hr{
+    display:none;
+  }
+  body{
+    margin:0;
+    border:none;
+  }
+  body > header{
+    background-image:url(../img/berrockbanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body > header > h1{
+    margin:10px auto;
+    background-color:hsla(60, 100%, 97%, .75);
+    border:2px solid black;
+    border-radius:10px;
+    padding: 3px 20px 22px;
+  }
+  body>header, main{
+    border:none;
+  }
+  main{
+    padding:10px;
+  }
+  nav{
+    text-align: center;
+  }
+  nav ul{
+    display:inline-flex;
+    flex-direction: column;
+    align-items:center;
+    border-width:1px;
+    border-radius: 10px;
+    padding: 0 10vw;
+  }
+  nav ul li{
+    line-height:2;
+  }
+  section, aside{
+    width:100%;
+    padding: 0 25px 20px;
+  }
+  .grad h2, .grad i{
+    font-size: 7vw;
+  }
+  textarea{
+    width:50vw;
+  }
+  section img{
+    margin:5px;
+  }
+  .small{
+    display:inline-block;
+  }
+  .big{
+    display:none;
+  }
+  section h2{
+    text-align: center;
+  }
+  #menu .fb div{
+    width:100%;
+    text-align:center;
+    margin-top:60px;
+  }
+  #menu .fb div:first-of-type{
+    margin-top:15px;
+  }
+  #menu .fb div:last-of-type{
+    margin-bottom:30px;
+  }
+  #menu .fb div li{
+    list-style:none;
+    line-height:2;
+  }
+}
