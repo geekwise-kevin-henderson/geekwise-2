@@ -1,0 +1,65 @@
+@media screen and (max-width:800px){
+  body{
+    width:100%;
+  }
+  .container{
+    width:100%;
+  }
+  section{
+    width:100%;
+  }
+  aside{
+    width:100%;
+    text-align: center;
+    margin-bottom:20px;
+  }
+  aside ul{
+    padding:0;
+  }
+  aside ul li{
+    display:inline-block;
+    margin:10px;
+  }
+  section p:nth-of-type(1) span{
+    font-size:80px;
+    line-height:56px;
+  }
+}
+@media screen and (max-width:450px){
+  section p:nth-of-type(1) span{
+    font-size:60px;
+    line-height:36px;
+  }
+  header{
+    display:block;
+    text-align: center;
+  }
+  nav{
+    width:100vw;
+    margin-bottom: 20px;
+  }
+  section p img{
+    width:90%;
+    margin:0 5% 20px;
+  }
+  #mega .container{
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width:250px){
+  h1 img{
+    width:90%;
+    margin:0 5%;
+  }
+  nav ul{
+    display:block;
+  }
+  nav ul li{
+    width:100vw;
+    margin:10px 0;
+  }
+  #mega .container{
+    padding-top:30px;
+  }
+}

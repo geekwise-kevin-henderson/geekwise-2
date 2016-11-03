@@ -1,0 +1,35 @@
+html{
+  background-image: url(../img/headbg.jpg), url(../img/bobybg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat, repeat-x;
+  background-color: black;
+}
+body{
+  color:white;
+}
+main::after{
+  content:'';
+  display: block;
+  clear: both;
+}
+section{
+  width:65%;
+  float: left;
+  background-image:url(../img/mainbg.jpg), url(../img/leftbg.jpg);
+  background-position: right top;
+  background-repeat: repeat-x, no-repeat;
+}
+aside{
+  width:35%;
+  float:right;
+  background-image: url(../img/rightbg.png), url(../img/mainbg.jpg);
+  background-position: left top;
+  background-repeat: no-repeat, repeat-x;
+}
+.container{
+  width:800px;
+  margin: 0 auto;
+}
+footer{
+  background-color: hsl(9, 83%, 9%)
+}

@@ -1,0 +1,38 @@
+@import'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Raleway|Source+Sans+Pro');
+
+body{
+  margin:0;
+  text-align:center;
+  font-family: 'Raleway', 'Fjalla One', 'Source Sans Pro', sans-serif;
+  background-image: linear-gradient(to right,
+    blue,
+    red);
+}
+header{
+  width:100%;
+  font-size:6vw;
+  line-height:.75;
+}
+header h1{
+  margin:2vw 0 0 0;
+}
+header h2{
+  margin:0 0 2vw 0;
+}
+section{
+  width:50%;
+  padding:0 3vw;
+  box-sizing: border-box;
+}
+section h3{
+  font-size:5vw;
+}
+section:nth-of-type(1){
+  float:left;
+  background-color:hsla(240, 100%, 50%, 0.25);
+}
+section:nth-of-type(2){
+  float:right;
+  background-color:hsla(0, 100%, 50%, 0.25);
+}
