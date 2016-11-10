@@ -60,7 +60,11 @@ section::after{
 }
 h3{
   font-size:5vw;
-  margin:20px;
+  margin:40px;
+}
+h2{
+  font-size:6vw;
+  margin:40px;
 }
 section:nth-of-type(1){
   float:left;
@@ -90,7 +94,11 @@ hr{
   }
   h3{
     font-size:6vw;
-    margin:15px;
+    margin:30px;
+  }
+  h2{
+    font-size:7vw;
+    margin:30px;
   }
   .m1{
     display:block;
@@ -111,7 +119,11 @@ hr{
   }
   h3{
     font-size:7vw;
-    margin:10px;
+    margin:20px;
+  }
+  h2{
+    font-size:8vw;
+    margin:20px;
   }
   .m2{
     display:block;

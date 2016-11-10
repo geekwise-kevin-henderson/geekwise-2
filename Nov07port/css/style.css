@@ -1,6 +1,8 @@
 body{
   margin:0;
   position:relative;
+  background-color: black;
+  color: white;
 }
 body::after{
   clear:both;
@@ -14,15 +16,19 @@ img{
   shape-outside: circle();
   -webkit-shape-outside: circle();
 }
-header::after{
+header{
+  min-height: 100vh;
+}
+header::after, main::after, aside::after, body::after, .clear::after{
   clear:both;
   content:'';
   display: block;
 }
+
 header div:first-of-type{
   transform: rotate(-45deg);
-  background-color:black;
-  color:white;
+  background-color:white;
+  color:black;
   position:absolute;
   width:100%;
   left:-500px;
@@ -37,22 +43,222 @@ header div:nth-of-type(2){
   float:right;
 }
 header div:nth-of-type(2) img{
-  height:725px;
+  width:60vw;
+  max-width: 620px;
+  max-height: 700px;
 }
 main{
   width:65%;
   float:left;
 }
 main .entry{
-  width:calc(100%-200px);
+  width:calc(100%-406px);
   height:200px;
+  position:relative;
+  margin:0 30px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
 }
-main img{
-  width:200px;
+main .entry a, main .entry p, main .entry h3{
+  opacity:0;
+  color:white;
+  transition: all 500ms ease-in-out;
+}
+main .entry .gear{
+  transition: all 500ms ease-in-out;
+}
+main .entry h3{
+  font-size: 4vw;
+  margin:auto 0 auto 250px;
+}
+main .entry p{
+  font-size: 3vw;
+  margin:auto 0 auto 40px;
+}
+main .entry h3, main .entry p{
+  float:right;
+}
+main .entry img{
   float:left;
+}
+.entry:hover a, .entry:hover p, .entry:hover h3{
+  opacity:1;
+  margin:auto 40px;
+  text-align: center;
+}
+.entry:hover .gear{
+  opacity: 0;
 }
 aside{
   width:35%;
   float:right;
-  font-size:48px;
+  font-size:36px;
+  padding:15px;
+  box-sizing: border-box;
+}
+@-webkit-keyframes rotateleft {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotateright {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.gear{
+  border-radius:100%;
+  shape-outside: circle();
+  width:206px;
+  position: absolute;
+}
+.gear1
+{
+  -webkit-animation-name:rotateleft;
+  -webkit-animation-duration:5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+
+  animation-name:rotateleft;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  transition-timing-function:linear;
+}
+.gear2
+{
+  -webkit-animation-name:rotateright;
+  -webkit-animation-duration:5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+
+  animation-name:rotateright;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  transition-timing-function:linear;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+footer{
+  margin-top: 80px;
+}
+footer nav ul{
+  display:flex;
+  padding:0;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+footer nav ul li{
+  flex:1;
+  transition: all 500ms ease-in-out;
+  padding: 15px;
+}
+footer nav ul li:hover{
+  background-color: white;
+}
+footer nav ul li:hover a{
+  color: black;
+}
+footer nav ul li a{
+  color:white;
+  transition: all 500ms ease-in-out;
+}
+.me h1{
+  display: none;
+}
+.me header div{
+  text-align: center;
+  float:none;
+}
+.me main{
+  width:100%;
+  float:none;
+  font-size: 32px;
+}
+.me main p:first-of-type{
+  text-align: center;
+}
+.me main p{
+  margin:40px 50px;
+}
+@media screen and (max-width:1450px){
+  header div:first-of-type{
+    top:25px;
+    left:-450px;
+  }
+}
+@media screen and (max-width:1300px){
+  header div:first-of-type{
+    top:25px;
+    left:-400px;
+  }
+  main{
+    display:block;
+    width:100%;
+  }
+  aside{
+    display:block;
+    width:100%;
+  }
+}
+@media screen and (max-width:1150px){
+  header div:first-of-type{
+    top:25px;
+    left:-350px;
+  }
+}
+@media screen and (max-width:1000px){
+  header div:first-of-type{
+    top:25px;
+    left:-300px;
+  }
+}
+@media screen and (max-width:850px){
+  header div:first-of-type{
+    top:25px;
+    left:-250px;
+  }
+}
+@media screen and (max-width:700px){
+  header div:first-of-type{
+    top:25px;
+    left:-200px;
+  }
+}
+@media screen and (max-width:550px){
+  header div:first-of-type{
+    top:25px;
+    left:-150px;
+  }
+}
+@media screen and (max-width:400px){
+  header div:first-of-type{
+    top:25px;
+    left:-100px;
+  }
+}
+@media screen and (max-width:250px){
+  header div:first-of-type{
+    top:25px;
+    left:-50px;
+  }
+}
+@media screen and (max-width:100px){
+  header div:first-of-type{
+    top:25px;
+    left:0px;
+  }
 }
