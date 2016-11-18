@@ -1,0 +1,221 @@
+@import'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body{
+  margin:0;
+  color:white;
+  background-color:#2A2F4A;
+  box-sizing: border-box;
+  font-family: "source-sans-pro", sans-serif;
+}
+div{
+  display:flex;
+  flex-direction: column;
+}
+header{
+  position: relative;
+}
+.forty{
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.foot{
+  flex-direction: column;
+  padding:0 10%;
+}
+.forty h1{
+  font-size: 4vw;
+}
+.forty div, .foot div{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.forty div button, .foot div button{
+  background-color: #2A2F4A;
+  color: white;
+  border: 1px solid white;
+  width:200px;
+  height: 50px;
+  margin:auto;
+}
+hr{
+  height:1px;
+  border:none;
+  background-color:white;
+  width:100%;
+}
+.menu{
+  justify-content: space-between;
+  flex-direction:row;
+  padding:0 50px;
+  background-color:#2A2F4A;
+  position:fixed;
+  width:100%;
+  box-sizing: border-box;
+  top:0;
+  z-index: 1000;
+}
+.menu div nav{
+  z-index: -1;
+  opacity: 0;
+  display:none;
+  width:100vw;
+  height:100vh;
+  transition:all 500ms ease-in-out;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li{
+  text-align: center;
+  font-size: 4vw;
+  border-bottom: 1px solid #313551;
+}
+nav ul li button{
+  font-size: 4vw;
+}
+nav ul li a{
+  text-decoration:none;
+  color:white;
+}
+.menu div:hover nav{
+  z-index: 11;
+  opacity:1;
+  display:block;
+}
+.menu span{
+  color:#2A2F4A;
+  background-color:white;
+}
+section{
+  display:flex;
+}
+.f5{flex:5;}
+.f3{flex:3;}
+main section div{
+  box-sizing: border-box;
+  position: relative;
+}
+main section div h2{
+  font-size: 2vw;
+}
+main section div h4{
+  font-size: 1.75vw;
+}
+main section div hr{
+  width:150px;
+  position: absolute;
+  left:75px;
+}
+main section:nth-of-type(1)>div:nth-of-type(1){
+  background-image: url(../img/pic01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main section:nth-of-type(1)>div:nth-of-type(2){
+  background-image: url(../img/pic02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main section:nth-of-type(2)>div:nth-of-type(1){
+  background-image: url(../img/pic03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main section:nth-of-type(2)>div:nth-of-type(2){
+  background-image: url(../img/pic04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main section:nth-of-type(3)>div:nth-of-type(1){
+  background-image: url(../img/pic05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main section:nth-of-type(3)>div:nth-of-type(2){
+  background-image: url(../img/pic06.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.san{
+  height:100%;
+  width:100%;
+  padding:75px;
+  transition: all 500ms ease-in-out;
+}
+.san:hover{
+  background-color:rgba(0, 0, 0, 0);
+}
+.san1{
+  background-color:hsla(195, 52%, 65%, 0.5);
+}
+.san2{
+  background-color:hsla(249, 32%, 64%, 0.5);
+}
+.san3{
+  background-color:hsla(5, 64%, 72%, 0.5);
+}
+.san4{
+  background-color:hsla(29, 55%, 71%, 0.5);
+}
+.san5{
+  background-color:hsla(220, 45%, 65%, 0.5);
+}
+.san6{
+  background-color:hsla(152, 24%, 57%, 0.5);
+}
+.fortysan{
+  background-color:hsla(232, 29%, 21%, 0.5);
+}
+.clear::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+footer section{
+  width:60%;
+  float:left;
+}
+footer aside{
+  width:40%;
+  float:right;
+}
+footer div{
+  border:1px solid #313551;
+  box-sizing: border-box;
+  padding: 10px;
+}
+footer section form{
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+footer section form div{
+  flex-direction: row;
+  display:flex;
+  margin:auto;
+  border:none;
+}
+label{
+  text-align: center;
+}
+input{
+  margin:20px;
+}
+.bottom{
+  display: block;
+  width:100%;
+}
+.bottom div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

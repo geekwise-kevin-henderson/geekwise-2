@@ -210,8 +210,7 @@ footer nav ul li a{
     width:100%;
   }
   aside{
-    display:block;
-    width:100%;
+    display:none;
   }
 }
 @media screen and (max-width:1150px){
