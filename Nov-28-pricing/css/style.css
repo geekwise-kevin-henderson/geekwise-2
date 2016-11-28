@@ -1,0 +1,49 @@
+/*#f9244f;
+#f5cf38;*/
+body{
+  font-family: sans-serif;
+  margin: 0;
+  background-image: 
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+a.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9244f;
+  color:#f5f5f5;
+  font-weight: 600;
+  border-radius: 50px;
+  border:2px solid #f5f5f5;
+}
+a.btn:hover{
+  color:#f5cf38;
+}
+section{
+  text-align: center;
+}
+section>ul{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+section>ul>li{
+  flex:1;
+  background:#f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+section>ul>li a{
+  margin-top: auto;
+}
+section>ul>li:nth-child(2){
+  background-color: #f9244f;
+}
