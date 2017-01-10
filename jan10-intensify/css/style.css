@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico');
+@import'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+*{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body{
+  position: relative;
+}
+header{
+  position: fixed;
+}
+aside{
+  width:20%;
+  height:100vh;
+  position: fixed;
+  background-color: #25A2C3;
+  color:white;
+  left:-500px;
+  transition: all 300ms ease-in-out;
+}
+aside i{
+  position: absolute;
+  right:20px;
+  top:20px;
+}
+aside nav{
+  position: absolute;
+  left:20px;
+  top:20px;
+}
+aside a{
+  color:white;
+}
+.open{
+  left:0;
+}
+main{
+  width:80%;
+  float:right;
+  margin-left: 20%;
+}
+main>div:nth-of-type(1){
+  background-image:url(../img/banner.jpg)
+  display:flex;
+  margin: auto;
+}
+line{
+  height:1px;
+  width:100%;
+  border-top:1px solid black;
+}
