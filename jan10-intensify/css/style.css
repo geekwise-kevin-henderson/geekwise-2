@@ -38,9 +38,9 @@ aside a{
   left:0;
 }
 main{
-  width:80%;
+  width:70%;
   float:right;
-  margin-left: 20%;
+  margin: 0 15%;
 }
 main>div:nth-of-type(1){
   background-image:url(../img/banner.jpg)
