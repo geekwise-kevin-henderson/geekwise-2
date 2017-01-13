@@ -181,6 +181,7 @@ header nav i:hover header nav #sn{
 #location div{
   width: 30%;
   border: solid hsl(204, 8%, 88%) 1px;
+  border-radius: 5px;
   text-align: center;
 }
 #location div h4{
