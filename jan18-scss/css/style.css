@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+  margin: 0; }
+
+div {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 25px; }
+  div h1 {
+    color: steelblue;
+    font-size: 30px;
+    font-family: cursive; }
+  div button {
+    background-color: #8b0e8b;
+    border-color: #e817e8 #e817e8 #2e052e #2e052e;
+    border-style: solid;
+    border-width: 3px;
+    padding: 5px 10px; }
+
+li {
+  height: 30px; }
+  li:nth-child(1) {
+    background-color: red; }
+  li:nth-child(2) {
+    background-color: #ff2b00; }
+  li:nth-child(3) {
+    background-color: #ff5500; }
+  li:nth-child(4) {
+    background-color: #ff8000; }
+  li:nth-child(5) {
+    background-color: #ffaa00; }
+  li:nth-child(6) {
+    background-color: #ffd500; }
+  li:nth-child(7) {
+    background-color: yellow; }
+  li:nth-child(8) {
+    background-color: #d5ff00; }
+  li:nth-child(9) {
+    background-color: #aaff00; }
+  li:nth-child(10) {
+    background-color: #80ff00; }
+  li:nth-child(11) {
+    background-color: #55ff00; }
+  li:nth-child(12) {
+    background-color: #2bff00; }
+  li:nth-child(13) {
+    background-color: lime; }
+  li:nth-child(14) {
+    background-color: #00ff2b; }
+  li:nth-child(15) {
+    background-color: #00ff55; }
+  li:nth-child(16) {
+    background-color: #00ff80; }
+  li:nth-child(17) {
+    background-color: #00ffaa; }
+  li:nth-child(18) {
+    background-color: #00ffd5; }
+  li:nth-child(19) {
+    background-color: cyan; }
+  li:nth-child(20) {
+    background-color: #00d5ff; }
+  li:nth-child(21) {
+    background-color: #00aaff; }
+  li:nth-child(22) {
+    background-color: #0080ff; }
+  li:nth-child(23) {
+    background-color: #0055ff; }
+  li:nth-child(24) {
+    background-color: #002bff; }
+  li:nth-child(25) {
+    background-color: blue; }
+  li:nth-child(26) {
+    background-color: #2b00ff; }
+  li:nth-child(27) {
+    background-color: #5500ff; }
+  li:nth-child(28) {
+    background-color: #8000ff; }
+  li:nth-child(29) {
+    background-color: #aa00ff; }
+  li:nth-child(30) {
+    background-color: #d500ff; }
+  li:nth-child(31) {
+    background-color: magenta; }
+  li:nth-child(32) {
+    background-color: #ff00d5; }
+  li:nth-child(33) {
+    background-color: #ff00aa; }
+  li:nth-child(34) {
+    background-color: #ff0080; }
+  li:nth-child(35) {
+    background-color: #ff0080; }
+  li:nth-child(36) {
+    background-color: #ff0055; }
+  li:nth-child(37) {
+    background-color: #ff002b; }

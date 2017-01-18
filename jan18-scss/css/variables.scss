@@ -1,0 +1,54 @@
+$key-color:black;
+$secondary-color:yellow;
+$tertiary-color:red;
+
+$btn-color:hsl(300, 82%, 30%);
+$btn-color-light:lighten($btn-color, 20%);
+$btn-color-dark:darken($btn-color, 20%);
+
+$hl-size:30px;
+$hl-font:cursive;
+$hl-color:steelblue;
+
+$base:rgb(255, 0, 0);
+
+$r1:$base;
+$r2:adjust-hue($base, -350);
+$r3:adjust-hue($base, -340);
+$r4:adjust-hue($base, -330);
+$r5:adjust-hue($base, -320);
+$r6:adjust-hue($base, -310);
+$r7:adjust-hue($base, -300);
+$r8:adjust-hue($base, -290);
+$r9:adjust-hue($base, -280);
+$r10:adjust-hue($base, -270);
+$r11:adjust-hue($base, -260);
+$r12:adjust-hue($base, -250);
+$r13:adjust-hue($base, -240);
+$r14:adjust-hue($base, -230);
+$r15:adjust-hue($base, -220);
+$r16:adjust-hue($base, -210);
+$r17:adjust-hue($base, -200);
+$r18:adjust-hue($base, -190);
+$r19:adjust-hue($base, -180);
+$r20:adjust-hue($base, -170);
+$r21:adjust-hue($base, -160);
+$r22:adjust-hue($base, -150);
+$r23:adjust-hue($base, -140);
+$r24:adjust-hue($base, -130);
+$r25:adjust-hue($base, -120);
+$r26:adjust-hue($base, -110);
+$r27:adjust-hue($base, -100);
+$r28:adjust-hue($base, -90);
+$r29:adjust-hue($base, -80);
+$r30:adjust-hue($base, -70);
+$r31:adjust-hue($base, -60);
+$r32:adjust-hue($base, -50);
+$r33:adjust-hue($base, -40);
+$r34:adjust-hue($base, -30);
+$r35:adjust-hue($base, -20);
+$r36:adjust-hue($base, -10);
+
+$colors: $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r34, $r35, $r36;
+
+$i: 1;
