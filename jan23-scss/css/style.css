@@ -1,0 +1,83 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+h1, .btn {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #2862d7;
+}
+
+h2 {
+  font-family: Raleway;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul:first-of-type li {
+  width: calc(100%/6);
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: yellow;
+}
+
+ul:first-of-type li .fa {
+  color: blue;
+}
+
+ul:nth-of-type(2) li {
+  width: calc(100%/8);
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: cyan;
+}
+
+ul:nth-of-type(2) li .fa {
+  color: red;
+}
+
+ul:last-of-type li {
+  width: calc(100%/10);
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #c0fff4;
+}
+
+ul:last-of-type li .fa {
+  color: pink;
+}
+
+.btn {
+  display: inline-block;
+  background-color: pink;
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #d79d28;
+}
+
+.btn {
+  text-decoration: none;
+}
