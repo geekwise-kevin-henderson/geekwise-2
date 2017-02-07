@@ -6,69 +6,97 @@ if(parseInt(age) >= 13){
 
   if(ready === true){
     var verb1 = prompt('verb');
-    while(verb1 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var adjective1 = prompt('adjective');
-    while(adjective1 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var verb2 = prompt('verb');
-    while(verb2 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var noun_plural1 = prompt('plural noun');
-    while(noun_plural1 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var weapon_plural1 = prompt('plural weapon');
-    while(weapon_plural1 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var adjective2 = prompt('adjective');
-    while(adjective2 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var noun1 = prompt('noun');
-    while(noun1 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var noun_plural2 = prompt('plural noun');
-    while(noun_plural2 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var verb2 = prompt('verb');
-    while(verb2 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var adjective3 = prompt('adjective');
-    while(adjective3 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var noun2 = prompt('noun');
-    while(noun2 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var verb3 = prompt('verb');
-    while(verb3 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var noun3 = prompt('noun');
-    while(noun3 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var verb_ending_in_ed1 = prompt('verb ending in -ed');
-    while(verb_ending_in_ed1 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var noun4 = prompt('noun');
-    while(noun4 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
-    var adjective4 = prompt('adjective');
-    while(adjective4 === null, ' '){
-      var again = alert('You had one job, reload the page to try again')
-    }
+    if(verb1 === null,' '){
+      var again = alert('You had one job, reload the page to try again');
+    };
+    else{
+      var adjective1 = prompt('adjective');
+      if(adjective1 === null, ' '){
+        var again = alert('You had one job, reload the page to try again');
+      };
+      else{
+        var verb2 = prompt('verb');
+        if(verb2 === null, ' '){
+          var again = alert('You had one job, reload the page to try again');
+        };
+        else{
+          var noun_plural1 = prompt('plural noun');
+          if(noun_plural1 === null, ' '){
+            var again = alert('You had one job, reload the page to try again');
+          };
+          else{
+            var weapon_plural1 = prompt('plural weapon');
+            if(weapon_plural1 === null, ' '){
+              var again = alert('You had one job, reload the page to try again');
+            };
+            else{
+              var adjective2 = prompt('adjective');
+              if(adjective2 === null, ' '){
+                var again = alert('You had one job, reload the page to try again');
+              };
+              else{
+                var noun1 = prompt('noun');
+                if(noun1 === null, ' '){
+                  var again = alert('You had one job, reload the page to try again');
+                };
+                var noun_plural2 = prompt('plural noun');
+                if(noun_plural2 === null, ' '){
+                  var again = alert('You had one job, reload the page to try again');
+                };
+                else{
+                  var verb2 = prompt('verb');
+                  if(verb2 === null, ' '){
+                    var again = alert('You had one job, reload the page to try again');
+                  };
+                  else{
+                    var adjective3 = prompt('adjective');
+                    if(adjective3 === null, ' '){
+                      var again = alert('You had one job, reload the page to try again');
+                    };
+                    else{
+                      var noun2 = prompt('noun');
+                      if(noun2 === null, ' '){
+                        var again = alert('You had one job, reload the page to try again');
+                      };
+                      else{
+                        var verb3 = prompt('verb');
+                        if(verb3 === null, ' '){
+                          var again = alert('You had one job, reload the page to try again');
+                        };
+                        else{
+                          var noun3 = prompt('noun');
+                          if(noun3 === null, ' '){
+                            var again = alert('You had one job, reload the page to try again');
+                          };
+                          else{
+                            var verb_ending_in_ed1 = prompt('verb ending in -ed');
+                            if(verb_ending_in_ed1 === null, ' '){
+                              var again = alert('You had one job, reload the page to try again');
+                            };
+                            else{
+                              var noun4 = prompt('noun');
+                              if(noun4 === null, ' '){
+                                var again = alert('You had one job, reload the page to try again');
+                              };
+                              else{
+                                var adjective4 = prompt('adjective');
+                                if(adjective4 === null, ' '){
+                                  var again = alert('You had one job, reload the page to try again');
+                                };
+                              };
+                            };
+                          };
+                        };
+                      };
+                    };
+                  };
+                };
+              };
+            };
+          };
+        };
+      };
+    };
 
     var calculating = alert('Building your custom Hamlet verse');
 
@@ -76,16 +104,16 @@ if(parseInt(age) >= 13){
 
     var stars = prompt('please rate this mad lib out of 5 stars');
     if(parseFloat(stars) <= 5){
-      var thanks = alert('Thank You')
-    }
+      var thanks = alert('Thank You');
+    };
     else{
-      var again = alert('You had one job, reload the page to try again')
-    }
-  }
+      var again = alert('You had one job, reload the page to try again');
+    };
+  };
   else{
     var gone = alert('Well go away then');
-  }
-}
+  };
+};
 else{
   var gone = alert('Well go away then');
-}
+};
