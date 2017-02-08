@@ -1,12 +1,12 @@
 // var students = ['matthew','david','haley','marissa','micaela','osvaldo','rosamaria','alfredo','rigoberto','leonardo','gustavo','eric','kevin','montgomery','cobi','joshua'];
 // var fruits =
 // ['banana','apple','dragon fruit','kiwi','pineapple']
-// // function randomStudent(){
-// //   var numStudents = students.length;
-// //   var randStudent = Math.ceil(Math.random() * numStudents) - 1;
-// //   console.log(randStudent);
-// //   alert(students[randStudent]);
-// // };
+function randomStudent(){
+  var numStudents = students.length;
+  var randStudent = Math.ceil(Math.random() * numStudents) - 1;
+  console.log(randStudent);
+  alert(students[randStudent]);
+};
 // // randomStudent();
 // // console.log(fruits);
 // // //push - adds to end of array
