@@ -12,40 +12,48 @@
     <nav>
       <li><a href="#"><h2>Contact</h2></a></li>
     </nav>
+    <form id='login'>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <input type="submit" value="log in">
+    </form>
   </header>
   <body>
-    <form>
-      <p>Feel free to reach out to me.</p>
-      <label><span>First Name</span>
-      <input type="text">
-      </label>
-      <br>
-      <label><span>Last Name</span>
-      <input type="text">
-      </label>
-      <br>
-      <label><span>Email</span>
-      <input type="email">
-      </label>
-      <br>
-      <label><span>Message</span>
-      <textarea cols='30' rows='10'></textarea>
-      </label>
-      <br>
-      <label class='chk'>
-        <span></span>
-        <span><input type="checkbox" checked>
-        Sign up for my newsletter</span>
-      </label>
-      <br>
-      <div>
-        <span></span>
-        <span>
-          <input type="submit" value="SUBMIT">
-        </span>
-      </div>
-    </form>
+    <main>
+      <form id='contact'>
+        <p><span class='custom'></span>Feel free to reach out to me.</p>
+        <label><span>First Name</span>
+        <input type="text">
+        </label>
+        <br>
+        <label><span>Last Name</span>
+        <input type="text">
+        </label>
+        <br>
+        <label><span>Email</span>
+        <input type="email">
+        </label>
+        <br>
+        <label><span>Message</span>
+        <textarea cols='30' rows='10'></textarea>
+        </label>
+        <br>
+        <label class='chk'>
+          <span></span>
+          <span><input type="checkbox" checked>
+          Sign up for my newsletter</span>
+        </label>
+        <br>
+        <div>
+          <span></span>
+          <span>
+            <input type="submit" value="SUBMIT" disabled>
+          </span>
+        </div>
+      </form>
+    </main>
   </body>
+  <script src="js/md-5.js" charset="utf-8"></script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

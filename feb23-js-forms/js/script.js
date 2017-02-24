@@ -1,15 +1,52 @@
-var form = document.querySelector('form');
-var subBtn = document.querySelector('input[type="submit"]');
+var login = document.querySelector('#login');
+var loginBtn = document.querySelector('#login input[type="submit"]');
+var lock = [];
+var contact = document.querySelector('#contact');
+var contactBtn = document.querySelector('#contact input[type="submit"]');
 var userArr = [];
-subBtn.addEventListener('click', function(a){
+var custom = document.querySelector('.custom')
+contactBtn.addEventListener('click', function(a){
   a.preventDefault()
-  for(var i = 0; i < form.elements.length - 1; i++){
-    if(form.elements[i].type !== 'checkbox'){
-      userArr.push(form.elements[i].value);
+  for(var i = 0; i < login.elements.length - 1; i++){
+    if(contact.elements[i].type !== 'checkbox'){
+      userArr.push(contact.elements[i].value);
     }
-    if(form.elements[i].type === 'checkbox' && form.elements[i].checked){
+    if(contact.elements[i].type === 'checkbox' && contact.elements[i].checked){
       userArr.push(true);
     }
-    console.log(userArr);
   }
 });
+if(localStorage.getItem('username')){
+  username = localStorage.getItem('username');
+  alert(username + ' please enter your password to continue');
+}
+else{
+  alert('Please log in.')
+  login();
+}
+function login(){
+  loginBtn.addEventListener('click', function(b){
+    b.preventDefault()
+    for(var i = 0; i < login.elements.length - 1; i++){
+      if(login.elements[i].type === 'text'){
+        localStorage.setItem('username', MD5(login.elements[i].value));
+      }
+      if(login.elements[i].type === 'password'){
+        sessionStorage.setItem('password', MD5(login.elements[i].value));
+      }
+      form(var i = 0; i < contactForm.length-1; i++){
+        contact.elements[i].disabled = false;
+      }
+    }
+  });
+};
+function password(){
+  loginBtn.addEventListener('click', function(evt){
+    evt.preventDefault();
+    if(MD5(login.elements[1].value) === sessionStorage.getItem('password')){
+      alert('login successful');
+    }else{
+      alert('password does not match')
+    }
+  })
+};
