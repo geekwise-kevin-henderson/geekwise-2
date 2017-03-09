@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-image: url('https://www.unsplash.it/2000/1000');
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1{
+  color: white;
+  font-size: 4em;
+}
+section{
+  display: flex;
+  padding-top: 5vw;
+  box-sizing: border-box;
+  height: 100vh;
+  transition: 1500ms ease-in-out;
+}
+section img{
+  flex:4;
+}
+section div{
+  flex:5;
+  padding:1em;
+}
+section div h2{
+  font-size: 3em;
+}
+section div p{
+  font-size: 1.5em;
+}
+section:nth-of-type(2n+1){
+  flex-direction: row-reverse;
+}
+#meter{
+  background-color: white;
+  position: fixed;
+  top:10px;
+  left: 10px;
+  box-shadow: 4px 4px 8px hsla(0, 0%, 0%, .5);
+  z-index: 999;
+}
+#meter ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.colorIn1{
+  background-color: rgb(71, 97, 161);
+}
+.colorIn2{
+  background-color: rgb(120, 173, 104);
+}
+.colorIn3{
+  background-color: rgb(167, 127, 119);
+}
+.colorIn4{
+  background-color: rgb(149, 75, 156);
+}
