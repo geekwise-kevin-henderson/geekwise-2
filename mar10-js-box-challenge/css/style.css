@@ -1,0 +1,81 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding:2em;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+nav ul li{
+  padding:1em;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+#floater{
+  position: fixed;
+  top:10px;
+  left: 10px;
+  box-shadow: 4px 4px 8px hsla(0, 0%, 0%, .5);
+  z-index: 1000;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#floater form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#floater input{
+  display: block;
+  font-size: inherit;
+  font:inherit;
+  line-height: inherit;
+  margin: 24px 6px 0;
+}
+#hero{
+  background-image:url('https://www.unsplash.it/2000/1000');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#hero h1{
+  font-size: 5em;
+  color:hsla(0, 0%, 100%, 0.5);
+  background-color: hsla(0, 0%, 0%, .5);
+  padding:2em;
+  border-radius: 1em;
+}
+.hidden{
+  display: none;
+}
+.shown{
+  display: flex;
+}
+section{
+  display: flex;
+}
+section div{
+  flex:3;
+}
+section img{
+  flex:2;
+}

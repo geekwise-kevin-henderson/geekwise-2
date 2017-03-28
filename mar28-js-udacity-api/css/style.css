@@ -1,0 +1,17 @@
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li{
+  width: 250px;
+  max-resolution: 16px;
+}
+img{
+  width: 100%;
+}
