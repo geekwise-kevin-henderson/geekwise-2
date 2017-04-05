@@ -48,12 +48,47 @@ function getMovies(movies){
       poster_path = document.createElement('img'),
       star_span = document.createElement('span'),
       stars = Math.round( parseInt(e.vote_average) / 2 );
-      console.log(stars);
       for (var i = 0; i < stars; i++){
         var vote_average = document.createElement('i');
         vote_average.classList.add("fa", "fa-star");
         vote_average.ariaHidden = "true";
         star_span.append(vote_average);
+      }
+      if(stars === 4){
+        for (var i = 0; i < 1; i++) {
+          var vote_average = document.createElement('i');
+          vote_average.classList.add("fa", "fa-star-o");
+          vote_average.ariaHidden = "true";
+          star_span.append(vote_average);
+        }
+      }else if(stars === 3){
+        for (var i = 0; i < 2; i++) {
+          var vote_average = document.createElement('i');
+          vote_average.classList.add("fa", "fa-star-o");
+          vote_average.ariaHidden = "true";
+          star_span.append(vote_average);
+        }
+      }else if(stars === 2){
+        for (var i = 0; i < 3; i++) {
+          var vote_average = document.createElement('i');
+          vote_average.classList.add("fa", "fa-star-o");
+          vote_average.ariaHidden = "true";
+          star_span.append(vote_average);
+        }
+      }else if(stars === 1){
+        for (var i = 0; i < 4; i++) {
+          var vote_average = document.createElement('i');
+          vote_average.classList.add("fa", "fa-star-o");
+          vote_average.ariaHidden = "true";
+          star_span.append(vote_average);
+        }
+      }else if(stars === 0){
+        for (var i = 0; i < 5; i++) {
+          var vote_average = document.createElement('i');
+          vote_average.classList.add("fa", "fa-star-o");
+          vote_average.ariaHidden = "true";
+          star_span.append(vote_average);
+        }
       }
       release_date.textContent = e.release_date.split("-").splice(0,1);
       title.textContent = e.title;
@@ -97,5 +132,3 @@ function envVars(){
     }
   }
 }
-// turn vote_average into stars
-// get release_date just the year
