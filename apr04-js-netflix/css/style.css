@@ -1,0 +1,37 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section li{
+  width: 250px;
+  margin: 25px 2px;
+  transition: 333ms ease-in-out;
+  position: relative;
+  background-color: black;
+  padding: 4px;
+}
+section li:hover{
+  transform: scale(1.25);
+}
+section div{
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px black;
+  transition: 333ms ease-in-out;
+  opacity:0;
+}
+section li:hover div{
+  opacity:1;
+}
+section li:hover{
+  box-shadow: 10px 10px 5px black;
+}
+section li img{
+  width: 100%;
+  float: left;
+}
